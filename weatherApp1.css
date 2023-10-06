@@ -1,0 +1,397 @@
+body 
+{
+     background-image: url("clouds-sky.gif");
+     background-size : cover;
+}
+
+
+div
+{
+   /* border : 2px solid lightgrey; */
+}
+
+.mainBox
+{
+   padding : 20px;
+   border : 2px solid lightgrey;
+   margin : auto;
+   font-family : sans-serif;
+   width : 50%;
+    font-family: 'Roboto Light';
+    border-radius : 10px;
+}
+
+
+
+
+/* flex properties */
+
+.fL
+{
+   display : flex;
+   flex-direction: column;
+}
+
+.fl1
+{
+   display : flex;
+   justify-content : space-between;
+}
+
+.fl2 
+{
+   display : flex;
+   flex-direction: row;
+}
+
+/* flex properties */
+
+
+
+
+/* getInfo class */
+
+.getInfo
+{
+   padding : 5px;
+   border : 2px solid lightgrey;
+   border-radius : 5px;
+   margin-bottom : 30px;
+   flex-wrap : wrap;
+   background-color : #0F52BA;
+}
+
+.GI1 
+{
+   padding : 10px;
+   font-size : 23px;
+   border-radius : 5px;
+   border: 2px solid lightgrey;
+   margin-bottom : 8px;
+   background-color : #191970;
+   color : white;
+}
+
+.GI0 
+{
+   margin : 0;
+   align-self: center;
+   color : white;
+}
+
+.GI2
+{
+   width : 430px;
+   border-radius : 20px ;
+   height : 36px;
+   border : 2px solid lightgrey;
+}
+
+.GI2_inp
+{
+   display : inline-block;
+   height : 33px;
+   width : 300px;
+   padding-left : 10px; 
+   border-radius : 20px 0px 0px 20px;
+   font-size : 15px;
+}
+
+.GI2_search
+{
+   width : 25%;
+   border-radius : 0px 20px 20px 0px;
+   padding : 5px;
+   font-size : 21px;
+   text-align : center;
+   height : 29.5px;
+   background-color : white;
+   opacity : 0.6;
+   cursor : pointer;
+   
+}
+
+/* getInfo class */
+
+
+
+
+
+ /* showInfo  class */
+
+ .showInfo 
+ {
+    padding : 10px;
+    border : 2px solid lightgrey;
+    border-radius : 10px;
+ }
+
+ .showTemp
+ {
+    padding : 10px;
+    border-radius : 10px;
+    margin-bottom : 10px;
+    flex-wrap : wrap;
+    background-color: #87CEEB;
+ }
+
+ .Loc_det
+ {
+    padding : 20px;
+    flex-wrap : wrap;
+ }
+
+ .ST_cond
+ {
+    display : flex;
+    flex-wrap : row;
+    font-weight : light;
+    /* padding : 10px; */
+ }
+
+ .ST_cond h2 
+ {
+   font-weight : lighter;
+   margin : 10px 20px 0px 10px;
+   color : white;
+   font-size : 33px;
+ }
+
+ .ST_cond img
+ {
+    align-self: self-end;
+ }
+
+ .Loc_det h1 
+ {
+    margin-bottom : 0px;
+    margin-top : 0;
+    color : white;
+    font-weight : bolder;
+    font-size : 53px;
+ }
+
+ .loc_par 
+ {
+    padding-left : 10px;
+    font-size : 23px;
+    color : white;
+    font-weight: bold;
+ }
+
+ .Temp 
+ {
+    border : 2px solid transparent;
+    /* padding : 10px; */
+    box-sizing: border-box;
+ }
+
+ .Temp h1
+ {
+    font-size : 123px;
+    margin-top : 0px;
+    margin-bottom : 0px;
+    font-weight : lighter;
+    padding : 0px;
+    color : white;
+ }
+
+
+
+
+
+
+ .Air_qual 
+ {
+    padding : 10px;
+    border-radius : 10px;
+    font-size : 19px;
+    gap : 10px;
+    flex-wrap : wrap;
+    margin-bottom : 10px;
+    background-color: #87CEEB;
+ }
+
+ .D1 
+ {
+    gap : 10px;
+    align-self: flex-end;
+    flex-wrap : wrap;
+    border : 2px solid transparent;
+ }
+
+ .D1 div 
+ {
+    padding : 1px;
+    gap : 5px;
+    border-radius : 10px;
+    background-color: white;
+    
+ }
+
+ .d1 
+ {
+    border-radius : 10px 10px 0px 0px;
+    background-color :#0047AB;
+    color : white;
+ }
+
+ .d2 
+ {
+    border-radius : 0px 0px 10px 10px;
+    
+ }
+
+ .Air_qual span
+ {
+    padding : 10px;
+    border : 2px solid lightgrey;
+    text-align: center;
+    line-height : 1.6;
+ }
+
+ .Air_qual_S1 
+ {
+    width : 20%;
+    border-radius : 10px;
+    display : flex;
+    justify-self: center;
+    background-color: #0047AB;
+    color : white;
+ }
+
+ .Air_qual div 
+ {
+    /* padding : 10px; */
+    /* border : 2px solid lightgrey; */
+ }
+
+
+
+
+ .Cond 
+ {
+     /* padding : 10px; */
+     border : 2px solid lightgrey;
+     border-radius : 10px;
+     font-size : 19px;
+     flex-wrap : wrap;
+     background-color :#87CEEB;
+ }
+
+ .cond_s1 
+ {
+    width : 90%;
+    text-align: center;
+    padding : 5px;
+    border : 2px solid lightgrey;
+    border-radius : 10px;
+    margin : auto;
+    margin-top : 5px;
+    margin-bottom : 5px;
+    background-color: #191970;
+    color : white;
+ }
+
+ .cond_D1 
+ {
+    padding : 10px;
+    border : 2px solid lightgrey;
+    border-radius : 0px 0px 10px 10px;
+    gap : 10px;
+    flex-wrap : wrap;
+   
+ }
+
+ .conds 
+ {
+    padding : 2px;
+    border : 2px solid lightgrey;
+    width : 13%;
+    border-radius : 10px;
+    gap : 3px;
+    font-size : 19px;
+    margin-bottom : 20px;
+    background-color: white;
+ }
+
+
+ .feelsLike 
+ {
+    padding : 10px;
+    border : 2px solid lightgrey;
+    border-radius : 10px 10px 0px 0px;
+    background-color: white;
+ }
+
+ .FLD 
+ {
+    border : 2px solid lightgrey;
+    border-radius : 0px 0px 10px 10px;
+    gap : 3px;
+    text-align: center;
+ }
+
+ .FLd1
+ {
+    padding : 10px;
+    background-color: #0047AB;
+    color : white;
+ }
+
+ .FLd2 
+ {
+    padding : 10px;
+ }
+
+
+
+ .wind 
+ {
+    padding : 10px;
+    border  : 2px solid lightgrey;
+    border-radius : 10px;
+    width : 70%;
+    justify-content: space-between;
+    background-color: white;
+ }
+
+ .windicon 
+ {
+    padding : 10px;
+    border : 2px solid lightgrey;
+    border-radius : 10px;
+    
+ }
+
+ .wind_data 
+ {
+    gap : 10px;
+    flex-wrap : wrap;
+    border : 2px solid transparent;
+ }
+
+ .wind_data div 
+ {
+    border  :2px solid lightgrey;
+    border-radius : 10px;
+    padding : 2px;
+    gap : 5px;
+ }
+
+ .wind_data_S1 
+ {
+    border : 2px solid lightgrey;
+    border-radius : 10px 10px 0px 0px;
+    padding : 6px;
+    background-color: #0047AB;
+    color : white;
+ }
+
+ .wind_data_S2 
+ {
+    border : 2px solid lightgrey;
+    border-radius : 0px 0px 10px 10px;
+    padding : 5px;
+    text-align: center;
+ }

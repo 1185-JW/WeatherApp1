@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weatherApp1.css">
+    <title>weatherApp1</title>
+</head>
+<body>
+       <script src="weatherApp1.js"></script>
+
+        <div class="mainBox fL"> 
+           <div class="getInfo fl1">
+
+              <div class="GI1">
+                Weather App
+              </div>
+
+              <span class="GI0">
+                Get weather report instantly!
+              </span>
+
+              <div class="GI2 fl2">
+                <input type="text" id="cityInp" placeholder="Enter city here....." class="GI2_inp"/>
+
+                <div class="GI2_search" onclick="showWeather()">Get</div>
+              </div>
+           </div>
+
+
+           <div class="showInfo" id="S_inf">
+
+             <div class="showTemp fl1">
+                <div class="Loc_det">
+                    <h1 id="H1">CityName</h1>
+
+                    <div class="ST_cond fL">
+                      <div class="fl1">
+                        <span><h2 id="H2">Sunny</h2></span>
+                        <div><img src="" height="80px" width="80px" id="Imgg"></div>
+                      </div>
+                    
+                     
+                      <div class="loc_par">
+                        <p id="Par1">region</p>
+                        <p id="Par2">country</p>
+                      </div>
+                   </div>
+
+                </div>
+
+                  <div class="Temp">
+                  <h1 id="TempH1">0°</h1>
+                  </div>
+             </div>
+              
+             <div class="Air_qual fl2">
+              <span class="Air_qual_S1">Air Quality  Index(AQI)</span>
+              
+                <div class="fl1 D1">
+                   <div class="fL">
+                   <span class="d1">CO<sub></sub></span>
+                   <span class="d2" id="d2_a">0</span>
+                    </div>
+
+                   <div class="fL">
+                   <span class="d1">NO<sub>2</sub></span>
+                   <span class="d2" id="d2_b">0</span>
+                   </div>
+
+                   <div class="fL">
+                   <span class="d1">O<sub>3</sub></span>
+                    <span class="d2" id="d2_c">0</span>
+                   </div>
+
+                    <div class="fL">
+                    <span class="d1">SO<sub>2</sub></span>
+                    <span class="d2" id="d2_d">0</span>
+                   </div>
+
+                   <div class="fL">
+                    <span class="d1">PM10<sub></sub></span>
+                     <span class="d2" id="d2_e">0</span>
+                    </div>
+ 
+                     <div class="fL">
+                     <span class="d1">PM2.5<sub></sub></span>
+                     <span class="d2" id="d2_f">0</span>
+                    </div>
+
+                </div>
+             </div>
+
+             <div class="Cond fL">
+               <span class="cond_s1">Condition</span>
+
+               <div class="cond_D1 fl2">
+                 
+                  <div class="conds fL">
+                     <div class="feelsLike">
+                       <img src="feelsLike.jpg" height="60px" width="60px">
+                     </div>
+
+                     <div class="FLD fL">
+
+                       <div class="FLd1">
+                         C
+                       </div>
+
+                       <div class="FLd2" id="FLd2_a">
+                         0
+                       </div>
+
+                     </div>
+
+                  </div>
+
+                     <div class="conds fL">
+                       <div class="feelsLike">
+                         <img src="feelsLike.jpg" height="60px" width="60px">
+                       </div>
+
+                        <div class="FLD fL">
+
+                           <div class="FLd1">
+                            F
+                            </div>
+
+                           <div class="FLd2"  id="FLd2_b">
+                             0
+                           </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="conds fL">
+                        <div class="feelsLike">
+                          <img src="gust.png" height="60px" width="60px">
+                        </div>
+ 
+                         <div class="FLD fL">
+ 
+                            <div class="FLd1">
+                             Kph
+                             </div>
+ 
+                            <div class="FLd2" id="FLd2_c">
+                              0
+                            </div>
+ 
+                         </div>
+ 
+                     </div>
+
+
+                     <div class="conds fL">
+                        <div class="feelsLike">
+                          <img src="gust.png" height="60px" width="60px">
+                        </div>
+ 
+                         <div class="FLD fL">
+ 
+                            <div class="FLd1">
+                             Mph
+                             </div>
+ 
+                            <div class="FLd2" id="FLd2_d">
+                              0
+                            </div>
+ 
+                         </div>
+ 
+                     </div>
+
+                     <div class="conds fL">
+                        <div class="feelsLike">
+                          <img src="thermometer.png" height="60px" width="60px">
+                        </div>
+ 
+                         <div class="FLD fL">
+ 
+                            <div class="FLd1">
+                             %
+                             </div>
+ 
+                            <div class="FLd2" id="FLd2_e">
+                              0
+                            </div>
+ 
+                         </div>
+ 
+                     </div>
+
+                     <div class="conds fL">
+                        <div class="feelsLike">
+                          <img src="precip.png" height="60px" width="60px">
+                        </div>
+ 
+                         <div class="FLD fL">
+ 
+                            <div class="FLd1">
+                              Inches
+                             </div>
+ 
+                            <div class="FLd2" id="FLd2_f">
+                              0
+                            </div>
+ 
+                         </div>
+ 
+                     </div>
+
+
+                     
+                     <div class="conds fL">
+                        <div class="feelsLike">
+                          <img src="precip.png" height="60px" width="60px">
+                        </div>
+ 
+                         <div class="FLD fL">
+ 
+                            <div class="FLd1">
+                              mm
+                             </div>
+ 
+                            <div class="FLd2" id="FLd2_g">
+                              0
+                            </div>
+ 
+                         </div>
+ 
+                     </div>
+
+
+                     <div class="conds fL">
+                        <div class="feelsLike" style="background-color:#d6e1e4;">
+                          <img src="air.png" height="60px" width="60px">
+                        </div>
+ 
+                         <div class="FLD fL">
+ 
+                            <div class="FLd1">
+                              Inches
+                             </div>
+ 
+                            <div class="FLd2" id="FLd2_h">
+                              0
+                            </div>
+ 
+                         </div>
+ 
+                     </div>
+
+                     <div class="conds fL">
+                        <div class="feelsLike" style="background-color:#d6e1e4;">
+                          <img src="air.png" height="60px" width="60px">
+                        </div>
+ 
+                         <div class="FLD fL">
+ 
+                            <div class="FLd1">
+                              Milibars
+                             </div>
+ 
+                            <div class="FLd2" id="FLd2_i">
+                              0
+                            </div>
+ 
+                         </div>
+ 
+                     </div>
+
+                     <div class="conds fL">
+                        <div class="feelsLike">
+                          <img src="temperature.png" height="60px" width="60px">
+                        </div>
+ 
+                         <div class="FLD fL">
+ 
+                            <div class="FLd1">
+                              C
+                             </div>
+ 
+                            <div class="FLd2" id="FLd2_j">
+                              0
+                            </div>
+ 
+                         </div>
+ 
+                     </div>
+
+                     <div class="conds fL">
+                        <div class="feelsLike">
+                          <img src="temperature.png" height="60px" width="60px">
+                        </div>
+ 
+                         <div class="FLD fL">
+ 
+                            <div class="FLd1">
+                              F
+                             </div>
+ 
+                            <div class="FLd2" id="FLd2_k">
+                              0
+                            </div>
+ 
+                         </div>
+ 
+                     </div>
+
+                     <div class="conds fL">
+                        <div class="feelsLike">
+                          <img src="uv.png" height="60px" width="60px">
+                        </div>
+ 
+                         <div class="FLD fL">
+ 
+                            <div class="FLd1">
+                              Index
+                             </div>
+ 
+                            <div class="FLd2" id="FLd2_l">
+                              0
+                            </div>
+ 
+                         </div>
+ 
+                     </div>
+
+
+                     <div class="wind fl2">
+                        <div class="windicon">
+                          <img src="windB.png" height="60px" width="60px">
+                        </div>
+
+                         <div class="wind_data fl2">
+                           <div class="fL">
+                            <span class="wind_data_S1">Degree</span>
+                            <span class="wind_data_S2" id="WD1">0</span>
+                           </div>
+
+                           <div class="fL">
+                            <span class="wind_data_S1">Direction</span>
+                            <span class="wind_data_S2" id="WD2">0</span>
+                           </div>
+
+                           <div class="fL">
+                            <span class="wind_data_S1">Kph</span>
+                            <span  class="wind_data_S2"  id="WD3">0</span>
+                           </div>
+
+                           <div class="fL">
+                            <span class="wind_data_S1">Mph</span>
+                            <span  class="wind_data_S2"  id="WD4">0</span>
+                           </div>
+                        </div>
+                     </div>
+                 </div>
+                 
+                 
+                </div>
+            </div>
+
+
+           </div>
+
+          
+        </div>
+</body>
+</html>
